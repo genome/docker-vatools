@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu:bionic
 MAINTAINER Susanna Kiwala <susanna.kiwala@wustl.edu>
 
 LABEL \
