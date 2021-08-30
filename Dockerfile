@@ -3,7 +3,7 @@ MAINTAINER Susanna Kiwala <susanna.kiwala@wustl.edu>
 
 LABEL \
     description="Image containing the vatools python package" \
-    version="4.1.0"
+    version="5.0.1"
 
 RUN apt-get update -y && apt-get install -y \
     apt-utils \
@@ -17,4 +17,4 @@ RUN apt-get update -y && apt-get install -y \
 
 RUN pip3 install Cython
 RUN pip3 install pysam==0.9.0
-RUN pip3 install vatools==4.1.0
+RUN pip3 install vatools==5.0.1
