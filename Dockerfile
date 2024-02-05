@@ -1,9 +1,9 @@
-FROM ubuntu:bionic
+FROM python:3.11-buster
 MAINTAINER Susanna Kiwala <susanna.kiwala@wustl.edu>
 
 LABEL \
     description="Image containing the vatools python package" \
-    version="5.0.1"
+    version="5.1.0"
 
 RUN apt-get update -y && apt-get install -y \
     apt-utils \
@@ -15,6 +15,4 @@ RUN apt-get update -y && apt-get install -y \
     zlib1g-dev \
     gawk
 
-RUN pip3 install Cython
-RUN pip3 install pysam==0.9.0
-RUN pip3 install vatools==5.0.1
+RUN pip3 install vatools==5.1.0
